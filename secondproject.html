@@ -1,0 +1,439 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+<!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+ 
+		<style> 
+
+
+
+		.style{
+			color: black;
+			background-color: ;
+			border: 0px;
+		}
+	  body{ 
+	  	margin: 0;
+	    background-color: gainsboro;
+	    background-image: url("C:\navtacc\channels4_profile.jpg");
+      color: black;
+
+	  }
+	nav{
+	     
+		width: 100%;
+		overflow: auto;
+
+		 }
+	 ul{ 
+	 	margin: 0;
+	    padding: 0; 
+	    float: left;
+	    list-style: none; } 
+	li{
+	    float: left; }
+	 nav a{
+	    float: right;
+        color: black;
+        text-align: right;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 25px;
+        border-radius: 4px; 
+        background-color: ;
+        
+    } 
+	 nav a:hover{   
+	   color: white; 
+	   }
+	
+	  .img{
+	  	margin-top: -400px;
+        background-position: center;
+        	
+     }
+     .two{
+     	column-gap: 0px;
+     	grid-row-gap: 0px;
+}
+ .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bolder;
+  border-radius: 10px;
+  opacity: 1px;
+
+
+}
+   .container-float-left{
+        border-left: -60px;
+        border-radius: 10px;
+}
+
+
+
+
+.footer-clean {
+  padding:50px 0;
+  background-color:gainsboro;
+  color:#4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:center;
+}
+
+/*@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}*/
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+  text-align: center;
+  
+}
+.nav{
+  background-color: darkgray;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+/*
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}*/
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+label[for=fname]
+{
+	font-size: 5px;
+}
+/* Add a background color and some padding around the form */
+/*.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;*/
+}
+.container{
+	background-color: white;
+  color: black;
+}
+.book{
+	font-size: 30px;
+}
+.col{
+  color: black;
+}
+.tour{
+  color: black;
+}
+.col-sm-4{
+  color: black;
+
+.row
+{ color:black; }
+
+</style> 
+</head>
+
+     <body>
+
+      
+    <div class="nav">
+       <nav> 
+     <ul>
+     
+     <li><a href="">Home </a>
+     <li><a href="D:\NACTACC\html and css\tours.html">Tours</a></li> 
+     <li><a href="D:\NACTACC\html and css\services.html">Services</a></li> 
+     <li><a href="D:\NACTACC\html and css\hotels.html">Hotels</a></li>
+     <li><a href="D:\NACTACC\html and css\booking.html">Booking</a></li>
+     <li><a href="D:\NACTACC\html and css\about us.html">About us </li>
+     </li>
+    </ul>
+  </nav>
+    </div>
+  
+  </div>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="C:\Users\DELL.WEB-JAIMALA\Downloads\pexels-pixabay-2363.jpg" height="600px" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\DELL.WEB-JAIMALA\Downloads\Urnes_Stave_Church_luster_fjord_Norway_photo_Thomas_Morel_646b0cd1-2926-4b68-867e-8d4a6abba6b2.jpg" height="600px" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\DELL.WEB-JAIMALA\Downloads\MYSORE.jpg" height="600px" width="100%">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ <div class="centered">
+            <thead>
+
+          <center> 
+              <h1 style="font-size: 70px;">
+                Safe travels agency
+              </h1> 
+            <h1> Go, Find,Explore. </h1> <br> 
+              
+          </center>
+          <center>
+          <div  class="book">
+           <!-- 
+               	<button style="background-color:gray;" onclick="1"  >Book your tour</button> -->
+          </div>
+          </center>
+         </thead>
+         </div>
+         <br>
+         <br>
+          <div class="container">
+  <div class="row">
+        
+    <div class="col" >
+      <h1>
+              <b>TRAVEL AGENCY</b>
+      </h1>
+<h2>
+        We are excited to showcase the best destinations and experiences from around the world to inspire your next adventure. Our team of travel experts has scoured the globe to bring you unique and unforgettable experiences that cater to a range of interests and budgets.
+</h2>
+    </div>
+    <div class="col">
+      <img src="C:\Users\DELL.WEB-JAIMALA\Downloads\64d8c727ce86ca452c0b2a2a3f7a07a1-removebg-preview.png">
+    </div>
+  </div>
+</div>
+<div class="tour">
+  <center><h1> <b> TOP PACKAGES & TOURS <b> </h1></center>
+</div>
+
+
+       <div class="container">
+  <div class="row">
+        
+    <div class="col">
+      <img src="C:\Users\DELL.WEB-JAIMALA\Downloads\55d700a213cd9.jpg" height="300px" width="330px">
+      <span>$150/Per person</span>
+      <h2>
+              Kashmir, Pakistan.
+      </h2>
+      <p>Kashmir of Pakistan is known for it's beautiful landscape,rich culture and historical significance
+      Nature has endowed Kashmir with implausible beauty and is rightly called “Paradise on Earth” </p>
+      <br>
+      <button style="background-color: gray ;" onclick="">See Details</button>
+
+    </div>
+     <div class="col">
+       <img src="C:\Users\DELL.WEB-JAIMALA\Downloads\16875031010.jpg" height="300px" width="330px">
+        <span>$300/Per person</span>
+      <h2>
+              Maafushi, Maldives.
+      </h2>
+      <p>Maafushi is a beautiful island in the Maldives with a total population of just over 2,000 people. Tourism drives the local economy, with over 50 guesthouses in the region.  </p><br> 
+      <button style="background-color: gray ;" onclick="">See Details</button>
+    </div>
+    <div class="col">
+       <img src="C:\Users\DELL.WEB-JAIMALA\Downloads\istockphoto-535168027-170667a.webp" height="300px" width="330px">
+        <span>$200/Per person</span>
+      <h2>
+              Goa, India.
+      </h2>
+      <p>Mainly known for its beaches, Goa can be the perfect destination for a short holiday. Its sandy beaches and sunny weather attract people from across the globe.  </p><br> <br>
+      <button style="background-color: gray ; color: b; " onclick="">See Details</button> <br> <br>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+ <div class="container">
+  <div class="row">
+        
+    <div class="col">
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425289.99054860836!2d72.75643565580965!3d33.61625093388004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1713111752213!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="col">
+     <h1>
+        <b>Get in touch</b>
+      </h1>
+      <form> Name
+        <input type="text" name="username" placeholder="Enter your name">
+      </form>
+      <br>
+        <form> Email
+        <input type="text" name="username" placeholder="Enter a valid email address" width="px">
+      </form>
+      <br>
+       <form > How can we help you? <br> 
+       <textarea></textarea>
+       <br>
+       <button style="background-color: gray ;" onclick="">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<br>
+<div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Housing</a></li> <br>
+                            <li><a href="#">Food</a></li> <br>
+                            <li><a href="#">Transport</a></li> <br>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li> <br>
+                            <li><a href="#">Team</a></li> <br>
+                            <li><a href="#">policies</a></li> <br>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Contact us</h3>
+                        <ul>
+                            <li><a href="#">safetravelsagency@gmail.com</a></li>
+                            <li><a href="#">+92 344 8767362</a></li> <br>
+                           
+                        </ul>
+                    </div>
+                    <br>
+                   
+                </div>
+            </div>
+              <br>
+                    <div class="col-12  item social" style="text-align: center;"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Safe travels © 2024</p>
+                    </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+           
+</body>
+</html>
